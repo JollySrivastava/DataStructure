@@ -3,7 +3,11 @@ package com.practice.linkedlist;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 
-//Reverse the linked list 
+//Remove duplicates from unsorted linked list
+/**
+Input : 1 14 1 1 14 14 5 6 6 5 5 5 6 6 1 1 1
+output : 1 14 5 6
+**/
 
 public class RemoveDuplicatesFromLL
 {
