@@ -1,7 +1,11 @@
 package com.practice.linkedlist;
 
-//Reverse the linked list 
-
+//Remove duplicates  the linked list 
+/**
+* Given a sorted linked list with duplicates:
+  Input : 1 1 1 1 14 14 14 14 5 5 5 5 5 6 6 6 6 6 
+  Output: 1 14 5 6 
+**/
 public class RemoveDuplicatesFromSortedLL
 {
 	Node head;     // head of the linked list
