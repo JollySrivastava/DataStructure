@@ -1,1 +1,1 @@
-Repository : - Linked List DS
+Repository : - Linked List Data structure
