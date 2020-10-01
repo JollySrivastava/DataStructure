@@ -20,7 +20,7 @@ public class Solution {
         A.set(a,A.get(b));// A.get(b);
         A.set(b,temp);// = A.get(a);
     }
-    
+    //Reverse the list
     public void reverse(ArrayList<Integer> A, int i, int j){
         while(i<j) swap(A,i++,j--);
     }
