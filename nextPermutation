@@ -1,0 +1,27 @@
+public class Solution {
+    public ArrayList<Integer> nextPermutation(ArrayList<Integer> A) {
+    
+        if (A== null || A.size() == 1) return A;
+        int i  = A.size() - 2;
+        while(i>=0 && A.get(i)>=A.get(i+1)) i--;
+        if(i>=0)
+        {
+            int j = A.size() - 1;
+            while(A.get(j) <= A.get(i)) j--;
+            
+            swap(A,i,j);
+        }
+          reverse(A,i+1,A.size()-1);
+          return A;
+    }
+    
+    public void swap(ArrayList<Integer> A, int a ,int b){
+        int temp = A.get(a);
+        A.set(a,A.get(b));// A.get(b);
+        A.set(b,temp);// = A.get(a);
+    }
+    
+    public void reverse(ArrayList<Integer> A, int i, int j){
+        while(i<j) swap(A,i++,j--);
+    }
+}
